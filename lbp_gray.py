@@ -74,14 +74,12 @@ height, width, _ = img_bgr.shape
 # We need to convert RGB image 
 # into gray one because gray 
 # image has one channel only. 
-img_gray = cv2.cvtColor(img_bgr, 
-						cv2.COLOR_BGR2GRAY) 
+img_gray = cv2.cvtColor(img_bgr, cv2.COLOR_BGR2GRAY) 
 
 # Create a numpy array as 
 # the same height and width 
 # of RGB image 
-img_lbp = np.zeros((height, width), 
-				np.uint8) 
+img_lbp = np.zeros((height, width), np.uint8) 
 
 for i in range(0, height): 
 	for j in range(0, width): 
